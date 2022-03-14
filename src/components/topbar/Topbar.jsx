@@ -1,23 +1,22 @@
-// import { useState } from "react";
+import { useState } from "react";
 import "./topbar.css";
 import { Person, Mail } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
-  // const [topbar, setTopbar] = useState(false);
+  const [wrapper, setWrapper] = useState(false);
 
-  // const changeBackground = () => {
-  //   if (window.scrollY >= 100) {
-  //     setTopbar(true);
-  //   } else {
-  //     setTopbar(false);
-  //   }
-  // };
-
-  // window.addEventListener("scroll", changeBackground);
+  const changeBackground = () => {
+    if (window.scrollY >= 100) {
+      setWrapper(true);
+    } else {
+      setWrapper(false);
+    }
+  };
+  window.addEventListener('scroll', changeBackground);
 
   return (
     <div className={"topbar " + (menuOpen && "active")}>
-      <div className="wrapper">
+      <div className={wrapper ? "wrapper active" : "wrapper"}>
         <div className="left">
           <a href="#intro">
             <img className="logo" src="assets/images/logo.jpeg" alt="logo" />

@@ -8,3 +8,29 @@
   background-position: center;
   background-size: cover;
 }
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height:100vh;
+}
+
+.content h1 {
+  font-size:150px;
+  font-weight:700;
+  color: white;
+}
+
+.content p {
+  font-size:30px;
+  font-weight:300;
+  color: white;
+}
+
+.introBtn {
+  background-color:rgb(221, 103, 103);
+  padding:25px;
+  border-radius: 10px;
+}

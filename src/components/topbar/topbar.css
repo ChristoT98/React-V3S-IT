@@ -1,7 +1,7 @@
 .topbar {
   background-color: transparent;
   color: white;
-  height: 100px;
+  height: 80px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -19,6 +19,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: transparent;
+  transition: all 1s ease;
 }
 
 .left {
@@ -27,7 +29,7 @@
 }
 
 .logo {
-  height: 75px;
+  height: 56px;
   border-radius: 20%;
 }
 
@@ -66,12 +68,18 @@ span {
   transition: all 2s ease;
 }
 
+
+
 /* .topbar.active {
   background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%);
 } */
 
+.wrapper.active {
+  background: linear-gradient(90deg, rgb(188, 31, 57) 0%, rgb(188, 31, 57) 100%);
+}
+
 .topbar.active .line1 {
-  background-color: rgb(255, 255, 255);
+  background-color: #bd1f39;;
   transform: rotate(45deg);
 }
 
@@ -80,7 +88,7 @@ span {
 }
 
 .topbar.active .line3 {
-  background-color: rgb(255, 255, 255);
+  background-color: #bd1f39;;
   transform: rotate(-45deg);
 }
 
