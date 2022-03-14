@@ -1,0 +1,10 @@
+.intro {
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(53, 52, 52, 0.5),
+      rgba(22, 20, 20, 0.5)
+    ),
+    url(../../../public/assets/images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
