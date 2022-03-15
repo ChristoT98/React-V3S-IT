@@ -50,7 +50,7 @@ ul {
   font-weight: 300;
   color: white;
   width: 60%;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 li {
@@ -63,7 +63,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.slideLeft li a:hover {
   font-weight: 500;
   color: #bd1f39;
 }

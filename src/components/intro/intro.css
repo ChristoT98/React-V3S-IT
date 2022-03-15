@@ -14,23 +14,147 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height:100vh;
+  height: 100vh;
 }
 
 .content h1 {
-  font-size:150px;
-  font-weight:700;
+  font-size: 150px;
+  font-weight: 700;
   color: white;
+  opacity: 0;
 }
 
-.content p {
-  font-size:30px;
-  font-weight:300;
-  color: white;
+.content h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #9c9c9c;
+  margin-bottom: 50px;
+  text-align: center;
+  animation-delay: 0.3s;
+  opacity: 0;
 }
 
-.introBtn {
-  background-color:rgb(221, 103, 103);
-  padding:25px;
-  border-radius: 10px;
+.introBtnContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.introBtnContainer.slideUp {
+  animation-delay: 0.5s;
+}
+
+.introBtnAbout {
+  background-color: #bd1f39;
+  color: #fff;
+  width: 300px;
+  padding: 25px;
+  border-radius: 8px 0 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.introBtnContact {
+  background-color: #13161b;
+  padding: 25px;
+  width: 300px;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.introBtnAbout:hover {
+  background-color: #881729;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.introBtnContact:hover {
+  background-color: #080a0c;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.slideUp {
+  animation: slideUp 0.5s linear forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.socialIcons {
+  background-color: blue;
+  color: #000;
+}
+
+.iconName {
+  color: rgb(87, 13, 13);
+  background-color: #9c9c9c;
+}
+
+@media screen and (max-width: 600px) {
+  .content h1 {
+    font-size: 70px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+  }
+
+  .content h2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #9c9c9c;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .introBtnContainer {
+    position: static;
+    display: block;
+    width: 100%;
+  }
+
+  .introBtnContainer .btn {
+    border-radius: 8px;
+  }
+
+  .introBtnAbout {
+    background-color: #bd1f39;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    width: 250px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .introBtnContact {
+    background-color: #13161b;
+    color: #fff;
+    text-align: center;
+    width: 250px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+  }
 }
