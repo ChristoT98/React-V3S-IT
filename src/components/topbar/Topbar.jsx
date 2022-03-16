@@ -1,33 +1,34 @@
 import { useState } from "react";
+import { PhoneEnabled, Mail } from "@material-ui/icons";
 import "./topbar.css";
-import { Person, Mail } from "@material-ui/icons";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
-  const [wrapper, setWrapper] = useState(false);
+  const [wrapperColor, setWrapperColor] = useState(false);
 
-  const changeBackground = () => {
-    if (window.scrollY >= 100) {
-      setWrapper(true);
+  const changeBackgroundColor = () => {
+    if (window.scrollY >= 80) {
+      setWrapperColor(true);
     } else {
-      setWrapper(false);
+      setWrapperColor(false);
     }
   };
-  window.addEventListener('scroll', changeBackground);
+
+  window.addEventListener("scroll", changeBackgroundColor);
 
   return (
     <div className={"topbar " + (menuOpen && "active")}>
-      <div className={wrapper ? "wrapper active" : "wrapper"}>
+      <div className={wrapperColor ? "wrapper active" : "wrapper"}>
         <div className="left">
           <a href="#intro">
             <img className="logo" src="assets/images/logo.jpeg" alt="logo" />
           </a>
           <div className="itemContainer">
-            <Person className="icon" />
-            <span>+94 77 123 45 67</span>
+            <PhoneEnabled className="icon" />
+            <span className="itemText">+94 11 123 45 67</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>info@v3s-it.com</span>
+            <span className="itemText">info@v3s-it.com</span>
           </div>
         </div>
         <div className="right">

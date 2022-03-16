@@ -1,26 +1,38 @@
 .topbar {
-  background-color: transparent;
-  color: white;
-  height: 80px;
-  width: 100%;
+  color: #fff;
   position: fixed;
-  top: 0;
+  top: 0rem;
+  height: 5rem;
+  width: 100%;
   z-index: 3;
   transition: all 1s ease;
 }
 
-/* .topbar:hover {
-  background-color: #13161b;
-  color: white;
-} */
+.topbar.active .line1 {
+  background-color: #bd1f39;
+  transform: rotate(45deg);
+}
+
+.topbar.active .line2 {
+  opacity: 0;
+}
+
+.topbar.active .line3 {
+  background-color: #bd1f39;;
+  transform: rotate(-45deg);
+}
 
 .wrapper {
-  padding: 10px 30px;
+  padding: 0.625rem 1.875rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
   transition: all 1s ease;
+}
+
+.wrapper.active {
+  background-color: #bd1f39;
 }
 
 .left {
@@ -29,7 +41,7 @@
 }
 
 .logo {
-  height: 56px;
+  height: 3.5rem;
   border-radius: 20%;
   transition: 1s ease-in-out;
 }
@@ -41,22 +53,22 @@
 .itemContainer {
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .icon {
-  font-size: 18px;
-  margin-right: 5px;
+  font-size: 1.125rem;
+  margin-right: 0.313rem;
 }
 
-span {
-  font-size: 15px;
+.itemText {
+  font-size: 0.938rem;
   font-weight: 500;
 }
 
 .hamburger {
-  width: 32px;
-  height: 25px;
+  width: 2rem;
+  height: 1.563rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -67,34 +79,10 @@ span {
 .line2,
 .line3 {
   width: 100%;
-  height: 3px;
-  background-color: rgb(255, 255, 255);
+  height: 0.188rem;
+  background-color: #fff;
   transform-origin: left;
   transition: all 2s ease;
-}
-
-
-
-/* .topbar.active {
-  background: linear-gradient(90deg, rgb(66, 2, 194) 0%, rgb(0, 78, 194) 100%);
-} */
-
-.wrapper.active {
-  background: linear-gradient(90deg, rgb(188, 31, 57) 0%, rgb(188, 31, 57) 100%);
-}
-
-.topbar.active .line1 {
-  background-color: #bd1f39;;
-  transform: rotate(45deg);
-}
-
-.topbar.active .line2 {
-  opacity: 0;
-}
-
-.topbar.active .line3 {
-  background-color: #bd1f39;;
-  transform: rotate(-45deg);
 }
 
 @media screen and (max-width: 600px) {
