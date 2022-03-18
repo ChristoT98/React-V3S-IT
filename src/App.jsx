@@ -7,6 +7,7 @@ import Services from "./components/services/Services";
 import Works from "./components/works/Works";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ function App() {
         <Services />
         <Works />
         <Contact />
+        <Footer />
       </div>
     </div>
   );

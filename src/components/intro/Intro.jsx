@@ -6,19 +6,22 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import "./intro.css";
+import bgImage from "../../videos/background.mp4";
 
 export default function Intro() {
   return (
     <div className="intro" id="intro">
-      <div className="introContentContainer">
+      <video autoPlay loop muted>
+        <source src={bgImage} type="video/mp4" />
+      </video>
         <div className="titleContainer">
           <h1 className="introTitle slideUp">V3S-IT</h1>
           <h2 className="introSlogan slideUp">We build brands and beautiful experiences</h2>
           <div className="introBtnContainer slideUp">
-            <a href="" className="introBtnAbout btn">
+            <a href="#about" className="introBtn introBtnAbout">
               More About Us
             </a>
-            <a href="" className="introBtnContact btn">
+            <a href="#contact" className="introBtn introBtnContact">
               Let's Talk
             </a>
           </div>
@@ -47,7 +50,6 @@ export default function Intro() {
             </li>
           </ul>
         </div>
-      </div>
     </div>
   );
 }

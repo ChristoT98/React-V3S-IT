@@ -1,110 +1,88 @@
 .intro {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(
-      rgba(53, 52, 52, 0.5),
-      rgba(22, 20, 20, 0.5)
+  /* background-image: linear-gradient(
+      rgba(8, 5, 5, 0.5),
+      rgba(10, 6, 6, 0.5)
     ),
     url(../../../public/assets/images/hero-bg.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
-.introContentContainer {
+video {
+  width: 100%;
   height: 100vh;
+  position: absolute;
+  object-fit: cover;
 }
 
 .titleContainer {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
 }
 
 .introTitle {
-  font-size: 150px;
+  font-size: 9.375rem;
   font-weight: 700;
   color: white;
   opacity: 0;
 }
 
-.introSlogan {
-  font-size: 40px;
+.introSlogan.slideUp {
+  font-size: 2.5rem;
   font-weight: 400;
   color: #9c9c9c;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
   text-align: center;
   opacity: 0;
-}
-
-.introSlogan.slideUp {
   animation-delay: 0.3s;
 }
 
-.introBtnContainer {
+.introBtnContainer.slideUp {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
+  animation-delay: 0.5s;
 }
 
-.introBtnContainer.slideUp {
-  animation-delay: 0.5s;
+.introBtn {
+  width: 18.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5625rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .introBtnAbout {
   background-color: #bd1f39;
-  color: #fff;
-  width: 300px;
-  padding: 25px;
-  border-radius: 8px 0 0 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 400;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .introBtnContact {
   background-color: #13161b;
-  padding: 25px;
-  width: 300px;
-  color: #fff;
-  border-radius: 0 8px 8px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 400;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.introBtn:hover {
+  font-weight: 600;
+  transition: all 0.5s ease;
 }
 
 .introBtnAbout:hover {
   background-color: #881729;
-  font-weight: 600;
-  transition: all 0.5s ease;
 }
 
 .introBtnContact:hover {
   background-color: #080a0c;
-  font-weight: 600;
-  transition: all 0.5s ease;
-}
-
-.slideUp {
-  animation: slideUp 0.5s linear forwards;
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(250px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
 }
 
 .socialIconContainer {
@@ -117,53 +95,61 @@
   color: #bd1f39;
 }
 
+.slideUp {
+  animation: slideUp 0.5s linear forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(15.625rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .introTitle {
-    font-size: 70px;
+    font-size: 4.375rem;
     font-weight: 500;
     color: white;
     text-align: center;
   }
 
   .introSlogan {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 300;
     color: #9c9c9c;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
 
   .introBtnContainer {
-    position: static;
-    display: block;
     width: 100%;
+    position: static;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .introBtnContainer .btn {
-    border-radius: 8px;
+  .introBtn {
+    color: #fff;
+    text-align: center;
+    font-size: 0.75rem;
+    width: 15.625rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
   }
 
   .introBtnAbout {
     background-color: #bd1f39;
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    width: 250px;
-    font-weight: 400;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
   .introBtnContact {
     background-color: #13161b;
-    color: #fff;
-    text-align: center;
-    width: 250px;
-    font-size: 12px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 400;
   }
 
   .socialIconContainer {
