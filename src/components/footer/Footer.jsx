@@ -5,7 +5,7 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="footerbtnContainer">
+      <div className="footerBtn">
         <a href="#intro" className="footerbtnText">
           <FontAwesomeIcon icon={faArrowUp} className="btnIcon" /> Back To Top
         </a>

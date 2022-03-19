@@ -9,7 +9,7 @@
 }
 
 .topbar.active .line1 {
-  background-color: #bd1f39;
+  background-color: #fff;
   transform: rotate(45deg);
 }
 
@@ -18,7 +18,7 @@
 }
 
 .topbar.active .line3 {
-  background-color: #bd1f39;;
+  background-color: #fff;
   transform: rotate(-45deg);
 }
 
@@ -32,7 +32,7 @@
 }
 
 .wrapper.active {
-  background-color: #bd1f39;
+  background-color: #bd1f39;;
 }
 
 .left {
