@@ -19,6 +19,10 @@
   transform: translate3d(-50%, 0, 0);
 }
 
+.footerBtn:hover {
+  background-color: rgb(90, 20, 20);
+}
+
 .btnIcon {
   margin-right: 0.625rem;
 }
