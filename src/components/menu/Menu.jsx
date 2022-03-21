@@ -30,7 +30,7 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           className="worksSlider slideLeft"
           onClick={() => setMenuOpen(false)}
         >
-          <a href="#works">Works</a>
+          <a href="#testimonials">Testimonials</a>
         </li>
         <li
           className="contactSlider slideLeft"

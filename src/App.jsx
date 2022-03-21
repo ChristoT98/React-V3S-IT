@@ -4,7 +4,7 @@ import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
-import Works from "./components/works/Works";
+import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
 import Footer from "./components/footer/Footer";
@@ -20,7 +20,7 @@ function App() {
         <Intro />
         <About />
         <Services />
-        <Works />
+        <Testimonials />
         <Contact />
         <Footer />
       </div>
