@@ -14,70 +14,88 @@ export default function Services() {
       </div>
       <div className="servicesGridContainer">
         <div className="servicesGridBox">
-          <h2 className="servicesGridBoxTitle">
-            <span className="servicesGridBoxIcon"> <FontAwesomeIcon icon={faStar}/> </span> Brand Identity
-          </h2>
-          <p className="servicesGridBoxContent">
-            Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-            ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-            veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas
-            ipsa in tempora esse soluta sint.
-          </p>
+          <div className="servicesGridBoxTitleContainer">
+            <div className="servicesGridBoxIcon">
+            <i class="fa-regular fa-star"></i>
+            </div>
+            <h2 className="servicesGridBoxTitle">Brand Identity</h2>
+          </div>
+            <p className="servicesGridBoxDescription">
+              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
+              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
+              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
+              voluptas ipsa in tempora esse soluta sint.
+            </p>
         </div>
         <div className="servicesGridBox">
-          <h2 className="servicesGridBoxTitle">
-            <span className="servicesGridBoxIcon"> <FontAwesomeIcon icon={faStar}/> </span> Illustration
-          </h2>
-          <p className="servicesGridBoxContent">
-            Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-            ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-            veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas
-            ipsa in tempora esse soluta sint.
-          </p>
+          <div className="servicesGridBoxTitleContainer">
+            <div className="servicesGridBoxIcon">
+            <i class="fa-solid fa-object-group"></i>
+            </div>
+            <h2 className="servicesGridBoxTitle">Illustration</h2>
+          </div>
+            <p className="servicesGridBoxDescription">
+              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
+              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
+              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
+              voluptas ipsa in tempora esse soluta sint.
+            </p>
         </div>
         <div className="servicesGridBox">
-          <h2 className="servicesGridBoxTitle">
-            <span className="servicesGridBoxIcon"> <FontAwesomeIcon icon={faStar}/> </span> Marketing
-          </h2>
-          <p className="servicesGridBoxContent">
-            Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-            ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-            veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas
-            ipsa in tempora esse soluta sint.
-          </p>
+          <div className="servicesGridBoxTitleContainer">
+            <div className="servicesGridBoxIcon">
+            <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h2 className="servicesGridBoxTitle">Marketing</h2>
+          </div>
+            <p className="servicesGridBoxDescription">
+              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
+              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
+              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
+              voluptas ipsa in tempora esse soluta sint.
+            </p>
         </div>
         <div className="servicesGridBox">
-          <h2 className="servicesGridBoxTitle">
-            <span className="servicesGridBoxIcon"> <FontAwesomeIcon icon={faPhotoFilm}/> </span> Photography
-          </h2>
-          <p className="servicesGridBoxContent">
-            Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-            ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-            veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas
-            ipsa in tempora esse soluta sint.
-          </p>
+          <div className="servicesGridBoxTitleContainer">
+            <div className="servicesGridBoxIcon">
+            <i class="fa-solid fa-photo-film"></i>
+            </div>
+            <h2 className="servicesGridBoxTitle">Photography</h2>
+          </div>
+            <p className="servicesGridBoxDescription">
+              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
+              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
+              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
+              voluptas ipsa in tempora esse soluta sint.
+            </p>
         </div>
         <div className="servicesGridBox">
-          <h2 className="servicesGridBoxTitle">
-            <span className="servicesGridBoxIcon"> <FontAwesomeIcon icon={faStar}/> </span> UI/UX Design
-          </h2>
-          <p className="servicesGridBoxContent">
-            Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-            ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-            veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas
-            ipsa in tempora esse soluta sint.
-          </p>
+          <div className="servicesGridBoxTitleContainer">
+            <div className="servicesGridBoxIcon">
+            <i class="fa-solid fa-cube"></i>
+            </div>
+            <h2 className="servicesGridBoxTitle">UI/UX Design</h2>
+          </div>
+            <p className="servicesGridBoxDescription">
+              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
+              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
+              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
+              voluptas ipsa in tempora esse soluta sint.
+            </p>
         </div>
         <div className="servicesGridBox">
-          <h2 className="servicesGridBoxTitle">
-            <span className="servicesGridBoxIcon"> <FontAwesomeIcon icon={faStar}/> </span> Frontend Design
-          </h2>
-          <p className="servicesGridBoxContent">
-            Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
-            ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
-            veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas
-            ipsa in tempora esse soluta sint.
-          </p>
+          <div className="servicesGridBoxTitleContainer">
+            <div className="servicesGridBoxIcon">
+            <i class="fa-solid fa-shapes"></i>
+            </div>
+            <h2 className="servicesGridBoxTitle">Frontend Design</h2>
+          </div>
+            <p className="servicesGridBoxDescription">
+              Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit
+              ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus
+              veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit
+              voluptas ipsa in tempora esse soluta sint.
+            </p>
         </div>
       </div>
     </div>
