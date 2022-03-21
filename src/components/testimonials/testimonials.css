@@ -82,6 +82,7 @@ img.user {
 @media screen and (max-width: 600px) {
   .testimonials {
     justify-content: space-around;
+    height: auto;
   }
 
   .testimonials h1 {
