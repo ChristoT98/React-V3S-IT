@@ -15,10 +15,10 @@
 
 .menuTitleContainer {
   width: 100%;
-  top: 60px;
+  top: 3.75rem;
   left: 0;
   position: absolute;
-  height: 100px;
+  height: 6.25rem;
   display: flex;
   align-items: center;
   padding-left: 19%;
@@ -28,12 +28,12 @@
 .menuTitle {
   color: #bd1f39;
   font-weight: 200;
-  margin-right: 30px;
+  margin-right: 1.875rem;
 }
 
 .navigateLine {
   width: 20%;
-  height: 1px;
+  height: 0.0625rem;
   background-color: #bd1f39;
   z-index: 20;
 }
@@ -46,7 +46,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 300;
   color: white;
   width: 60%;
@@ -54,7 +54,7 @@ ul {
 }
 
 li {
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 a {
@@ -74,11 +74,11 @@ a {
 
 @keyframes slideleft {
   0% {
-    transform: translate(200px);
+    transform: translate(12.5rem);
     opacity: 0;
   }
   100% {
-    transform: translate(0px);
+    transform: translate(0rem);
     opacity: 1;
   }
 }
@@ -117,11 +117,26 @@ a {
   }
 
   .menu {
-    width: 60%;
-    right: -60%;
+    width: 50%;
+    right: -50%;
+    padding-top: 25%;
+    justify-content: flex-start;
   }
+
   ul {
     width: 90%;
     margin-left: 20%;
+  }
+  a {
+    font-size: 1.125rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .menu {
+    width: 40%;
+    right: -40%;
+    padding-top: 25%;
+    justify-content: flex-start;
   }
 }

@@ -1,6 +1,4 @@
 import "./services.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faPhotoFilm } from "@fortawesome/free-solid-svg-icons";
 
 export default function Services() {
   return (
@@ -16,7 +14,7 @@ export default function Services() {
         <div className="servicesGridBox">
           <div className="servicesGridBoxTitleContainer">
             <div className="servicesGridBoxIcon">
-            <i class="fa-regular fa-star"></i>
+            <i className="fa-regular fa-star"></i>
             </div>
             <h2 className="servicesGridBoxTitle">Brand Identity</h2>
           </div>
@@ -30,7 +28,7 @@ export default function Services() {
         <div className="servicesGridBox">
           <div className="servicesGridBoxTitleContainer">
             <div className="servicesGridBoxIcon">
-            <i class="fa-solid fa-object-group"></i>
+            <i className="fa-solid fa-object-group"></i>
             </div>
             <h2 className="servicesGridBoxTitle">Illustration</h2>
           </div>
@@ -44,7 +42,7 @@ export default function Services() {
         <div className="servicesGridBox">
           <div className="servicesGridBoxTitleContainer">
             <div className="servicesGridBoxIcon">
-            <i class="fa-solid fa-bullseye"></i>
+            <i className="fa-solid fa-bullseye"></i>
             </div>
             <h2 className="servicesGridBoxTitle">Marketing</h2>
           </div>
@@ -58,7 +56,7 @@ export default function Services() {
         <div className="servicesGridBox">
           <div className="servicesGridBoxTitleContainer">
             <div className="servicesGridBoxIcon">
-            <i class="fa-solid fa-photo-film"></i>
+            <i className="fa-solid fa-photo-film"></i>
             </div>
             <h2 className="servicesGridBoxTitle">Photography</h2>
           </div>
@@ -72,7 +70,7 @@ export default function Services() {
         <div className="servicesGridBox">
           <div className="servicesGridBoxTitleContainer">
             <div className="servicesGridBoxIcon">
-            <i class="fa-solid fa-cube"></i>
+            <i className="fa-solid fa-cube"></i>
             </div>
             <h2 className="servicesGridBoxTitle">UI/UX Design</h2>
           </div>
@@ -86,7 +84,7 @@ export default function Services() {
         <div className="servicesGridBox">
           <div className="servicesGridBoxTitleContainer">
             <div className="servicesGridBoxIcon">
-            <i class="fa-solid fa-shapes"></i>
+            <i className="fa-solid fa-shapes"></i>
             </div>
             <h2 className="servicesGridBoxTitle">Frontend Design</h2>
           </div>

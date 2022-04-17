@@ -6,13 +6,12 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import "./intro.css";
-import bgImage from "../../videos/background.mp4";
 
 export default function Intro() {
   return (
     <div className="intro" id="intro">
       <video autoPlay loop muted>
-        <source src={bgImage} type="video/mp4" />
+        <source src="assets/videos/background.mp4" type="video/mp4" />
       </video>
         <div className="titleContainer">
           <h1 className="introTitle slideUp">V3S-IT</h1>

@@ -1,6 +1,6 @@
 .about {
   background-color: #121212;
-  height: 220vh;
+  height: auto;
   position: relative;
 }
 
@@ -39,7 +39,6 @@
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  /* background-color: lightgreen; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +50,6 @@
   height: auto;
   padding: 10px;
   margin: 10px;
-  /* background-color:rgb(10, 97, 126); */
 
 }
 
@@ -82,11 +80,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  .about {
-    background-color: #121212;
-    height: auto;
-    position: relative;
-  }
 
   .aboutContentContainer {
     width: 90%;
@@ -123,7 +116,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    /* background-color: lightgreen; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,14 +127,12 @@
     height: auto;
     padding: 10px;
     margin: 10px;
-    /* background-color:rgb(10, 97, 126); */
-  
   }
   
   .gridBoxTitle {
-   color: white;
-   margin-bottom: 20px;
-   display:flex;
+  color: white;
+    margin-bottom: 20px;
+    display:flex;
     align-items: center;
     justify-content: flex-start;
     font-size: 15px;
@@ -163,7 +153,34 @@
     color: #ffffff4d;
     font-size: 15px;
     line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .aboutContentContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0 50px 30px;
+  }
+
+  .aboutGridContainer {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   
+  .gridBox {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
   }
 
 }

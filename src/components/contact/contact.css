@@ -1,18 +1,14 @@
 .contact {
   background-color: #bd1f39;
-  height: 150vh;
+  height: auto;
   position: relative;
 }
 
 .subHeadContainer {
-  position: absolute;
-  top: 80px;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  padding-top: 3%;
 }
 
 .subHeadText {
@@ -24,13 +20,10 @@
 }
 
 .headContainer {
-  position: absolute;
-  top: 150px;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 3%;
 }
 
 .headText {
@@ -41,13 +34,10 @@
 }
 
 .emailContainer {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 3%;
 }
 
 .emailText {
@@ -58,14 +48,11 @@
 }
 
 .addressContainer {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-top: 3%;
 }
 
 .addressText {
@@ -77,11 +64,11 @@
 }
 
 .contactIconContainer {
-  width: 80%;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5%;
 }
 
 .contactIconList {
@@ -101,59 +88,22 @@
 }
 
 @media screen and (max-width: 600px) {
-  .contact {
-    background-color: #bd1f39;
-    height: 100vh;
-    position: relative;
-  }
 
   .subHeadContainer {
-    width: 100%;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
-
-  .subHeadText {
-    color: #2a1538;
-    font-weight: 600;
-    text-align: center;
-    font-size: 1.25rem;
-    text-transform: uppercase;
+   padding: 5%;
   }
 
   .headContainer {
-    width: 80%;
-    position: absolute;
-    top: 18%;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   padding: 5%;
   }
 
   .headText {
-    color: #ffffff;
-    font-weight: 600;
-    text-align: center;
+    font-weight: 400;
     font-size: 20px;
   }
 
-  .emailContainer {
-    width: 100%;
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ .emailContainer {
+    padding: 5%;
   }
 
   .emailText {
@@ -164,14 +114,7 @@
   }
 
   .addressContainer {
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    padding: 5%;
   }
 
   .addressText {
@@ -182,26 +125,14 @@
     font-size: 15px;
   }
 
-  .contactIconContainer {
-    width: 80%;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
-  }
-
   .contactIconList {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .contactIconItem {
-    padding: 0 15px 0 15px;
+    padding: 5%;
     color: #ffffff;
     font-size: 20px;
-  }
+  } 
 }

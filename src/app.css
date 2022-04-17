@@ -5,9 +5,4 @@
 .sections {
   width: 100%;
   position: relative;
-  height: calc(100vh - 5rem);
-}
-
-.sections > * { 
-  height: calc(100vh - 5rem);
 }
