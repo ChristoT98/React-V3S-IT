@@ -3,9 +3,10 @@ import { PhoneEnabled, Mail } from "@material-ui/icons";
 import "./topbar.css";
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
+
   const [wrapperColor, setWrapperColor] = useState(false);
 
-  const changeBackgroundColor = () => {
+  const changeWrapperColor = () => {
     if (window.scrollY >= 80) {
       setWrapperColor(true);
     } else {
@@ -13,7 +14,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
     }
   };
 
-  window.addEventListener("scroll", changeBackgroundColor);
+  window.addEventListener("scroll", changeWrapperColor);
 
   return (
     <div className={"topbar " + (menuOpen && "active")}>
