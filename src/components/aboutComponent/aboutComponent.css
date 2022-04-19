@@ -1,0 +1,79 @@
+.gridBox {
+    width: 48%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+.gridBoxTitle {
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gridBoxNumber {
+    width: 50px;
+    background-color: #bd1f39;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.gridBoxContent {
+    color: #ffffff4d;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    .gridBox {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .gridBox {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .gridBoxTitle {
+        color: white;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 15px;
+    }
+
+    .gridBoxNumber {
+        width: 40px;
+        background-color: #bd1f39;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .gridBoxContent {
+        color: #ffffff4d;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+}

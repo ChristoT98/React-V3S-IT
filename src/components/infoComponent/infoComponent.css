@@ -1,0 +1,34 @@
+.info {
+    height: 1.875rem;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 10;
+    background-color: #bd1f39;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 1.875rem;
+}
+
+.infoIcon {
+    margin-right: 0.313rem;
+}
+
+.infoItemText {
+    font-size: 0.625rem;
+    font-weight: 500;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 600px) {
+    .info {
+        display: flex;
+    }
+}

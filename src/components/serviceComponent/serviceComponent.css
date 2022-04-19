@@ -1,0 +1,132 @@
+.servicesGridBox {
+    width: 48%;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+.servicesGridBoxTitleContainer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.servicesGridBoxTitle {
+    color: white;
+}
+
+.servicesGridBoxIcon {
+    width: 50px;
+    height: 50px;
+    color: #bd1f39;
+    font-size: 40px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicesGridBoxDescription {
+    color: #ffffff4d;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 60px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .servicesGridContainer {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .servicesGridBox {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+        display: block;
+    }
+
+    .servicesGridBoxTitleContainer {
+        display: block;
+    }
+
+    .servicesGridBoxTitle {
+        color: white;
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+    }
+
+    .servicesGridBoxIcon {
+        width: 40px;
+        height: 40px;
+        color: #bd1f39;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicesGridBoxDescription {
+        color: #ffffff4d;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 20px 0 0 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .servicesGridContainer {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .servicesGridBox {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 10px;
+        display: block;
+    }
+
+    .servicesGridBoxTitleContainer {
+        display: block;
+    }
+
+    .servicesGridBoxTitle {
+        color: white;
+        font-size: 15px;
+        padding: 10px 0 10px 0;
+    }
+
+    .servicesGridBoxIcon {
+        width: 40px;
+        height: 40px;
+        color: #bd1f39;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicesGridBoxDescription {
+        color: #ffffff4d;
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 20px 0 0 0;
+    }
+}

@@ -1,0 +1,193 @@
+.intro {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.titleContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.introTitle {
+  font-size: 9.375rem;
+  font-weight: 700;
+  color: white;
+  opacity: 0;
+}
+
+.introSlogan.slideUp {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #9c9c9c;
+  margin-bottom: 3.125rem;
+  text-align: center;
+  opacity: 0;
+  animation-delay: 0.3s;
+}
+
+.introBtnContainer.slideUp {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+.introBtn {
+  width: 18.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5625rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.introBtnAbout {
+  background-color: #bd1f39;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.introBtnContact {
+  background-color: #13161b;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.introBtn:hover {
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.introBtnAbout:hover {
+  background-color: #881729;
+}
+
+.introBtnContact:hover {
+  background-color: #080a0c;
+}
+
+.socialIconContainer {
+  position: absolute;
+  top: 60%;
+  left: 8%;
+}
+
+.socialIcon:hover {
+  color: #bd1f39;
+}
+
+.slideUp {
+  animation: slideUp 0.5s linear forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(15.625rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .intro {
+    height: auto;
+    padding-bottom: 10%;
+  }
+
+  .titleContainer {
+    justify-content: flex-start;
+  }
+
+  .introTitle {
+    margin-top: 20%;
+    font-size: 70px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .introSlogan.slideUp {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .introBtn {
+    padding: 15px;
+  }
+
+  .socialIconContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    height: auto;
+    padding-bottom: 10%;
+  }
+
+  .titleContainer {
+    justify-content: flex-start;
+  }
+
+  .introTitle {
+    margin-top: 50%;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .introSlogan.slideUp {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .introBtnContainer {
+    width: 100%;
+    position: static;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .introBtn {
+    color: #fff;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 0.9375rem;
+    width: 15.625rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+  }
+
+  .introBtnAbout {
+    background-color: #bd1f39;
+    margin-bottom: 0.625rem;
+  }
+
+  .introBtnContact {
+    background-color: #13161b;
+  }
+
+  .socialIconContainer {
+    display: none;
+  }
+}

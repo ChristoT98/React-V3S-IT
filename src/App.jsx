@@ -1,30 +1,29 @@
 import { useState } from "react";
-import "./App.css";
-import Topbar from "./components/topbar/Topbar";
-import Menu from "./components/menu/Menu";
-import Intro from "./components/intro/Intro";
-import About from "./components/about/About";
-import Services from "./components/services/Services";
-import Testimonials from "./components/testimonials/Testimonials";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import Info from "./components/info/Info";
+import Topbar from "./components/topbarComponent/TopbarComponent";
+import Menu from "./components/menuComponent/MenuComponent";
+import Intro from "./sections/intro/Intro";
+import About from "./sections/about/About";
+import Services from "./sections/services/Services";
+import Testimonials from "./sections/testimonials/Testimonials";
+import Contact from "./sections/contact/Contact";
+import Footer from "./sections/footer/Footer";
+import Info from "./components/infoComponent/InfoComponent";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="app">
-      <Info/>
+    <div>
+      <Info />
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className="sections">
+      <div>
         <Intro />
         <About />
-        {/*<Services />
-        <Testimonials />*/}
-        <Contact /> 
-        <Footer /> 
+        <Services />
+        <Testimonials />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );
